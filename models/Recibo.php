@@ -12,6 +12,6 @@ class Recibo extends Illuminate\Database\Eloquent\Model {
     protected $primaryKey = 'numero';
     //protected $fillable = ['ciudad', 'valor', 'valor_letras', 'pagado_a', 'concepto', 'codigo', 'aprobado', 'fecha'];
     protected $guarded = ['numero'];
-    protected $dates = ['fecha'];
+    //protected $dates = ['fecha'];
 
 }
