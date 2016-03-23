@@ -1,9 +1,9 @@
-<?php
+<?php 
 
 require 'cors.php';
 require 'Slim/Slim.php';
 
-foreach (glob("controllers/*.php") as $filename) {
+foreach(glob("controllers/*.php") as $filename) {
     require_once $filename;
 }
 
@@ -12,7 +12,7 @@ foreach (glob("controllers/*.php") as $filename) {
 \Slim\Slim::registerAutoloader();
 
 // Creamos la aplicación.
-$app = new \Slim\Slim();
+$app = new\Slim\Slim();
 
 // Indicamos el tipo de contenido y condificación que devolvemos desde el framework Slim.
 #$app->contentType("application/json; charset=utf-8");

@@ -45,7 +45,7 @@ function delete_recibo($id) {
     $respuesta = new stdClass();
     if ($instancia) {
         $respuesta->result = $instancia->delete();
-        if ($instancia->result) {
+        if ($respuesta->result) {
             $respuesta->mensaje = "Eliminado correctamente.";
             $respuesta->eliminado = $instancia;
         } else {
