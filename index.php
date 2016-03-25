@@ -24,7 +24,9 @@ $app->get('/', function() {
 $app->get('/recibos', "get_all_recibos");
 $app->get('/recibos/:id', "get_recibo");
 $app->post('/recibos', "post_recibo");
+$app->options('/recibos', "post_recibo");
 $app->delete("/recibos/:id", "delete_recibo");
 $app->put("/recibos/:id", "put_recibo");
+$app->options("/recibos/:id", "put_recibo");
 
 $app->run();
